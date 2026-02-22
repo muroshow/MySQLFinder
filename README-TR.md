@@ -1,4 +1,4 @@
-# 🔍 MySQL Finder (MacOS)
+# 🔍 MySQL Bulucu (MacOS)
 
 MacOS sistemlerde MySQL kurulum dizinini (Path) bulmak bazen işkenceye dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve klasörü saniyeler içinde karşınıza getirir.
 
