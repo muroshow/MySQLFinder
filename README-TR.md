@@ -18,4 +18,4 @@ macOS sistemlerde MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dön
 Terminal'i açın ve aşağıdaki komutu yapıştırın. Bu komut scripti **Masaüstünüze** indirecek ve gerekli izinleri otomatik olarak ayarlayacaktır:
 
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
