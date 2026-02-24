@@ -8,7 +8,7 @@ NC='\033[0m'
 
 clear
 echo "=================================================="
-echo "      MySQL KONUM BULUCU (DEDEKTİF)"
+echo "      MySQL DİZİN BULUCU (DEDEKTİF)"
 echo "=================================================="
 echo -e "${CYAN}MySQL kurulum dizini aranıyor, lütfen bekleyin...${NC}"
 
@@ -54,4 +54,4 @@ open "$MYSQL_BIN_PATH"
 
 echo -e "${GREEN}İşlem tamamlandı!${NC}"
 echo "=================================================="
-read -p "Kapatmak için Enter'a basın..."
+read -p "Çıkmak için Enter'a basın..."
