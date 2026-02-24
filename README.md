@@ -11,8 +11,8 @@ Finding the MySQL installation directory (Path) on macOS systems can sometimes t
 
 ## 🚀 How to Use
 
-1. Download the `MySQL Finder.command` file from this repository.
-2. Move the file to your desktop or any folder you prefer.
-3. Grant execution permission via Terminal (Only once):
-   ```bash
-   chmod +x "MySQL Finder.command"
+### Way-1: One-Click Installation (Fastest)
+Open your Terminal and paste the following command. This will download the script to your **Desktop** and set permissions automatically:
+
+```bash
+curl -L -o ~/Desktop/"MySQL Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQL%20Finder.command" && chmod +x ~/Desktop/"MySQL Finder.command"
