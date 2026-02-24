@@ -1,4 +1,4 @@
-# 🔍 MySQL Finder (macOS)
+# 🔍 macOS MySQL Directory Finder (macOS)
 
 Finding the MySQL installation directory (Path) on macOS systems can sometimes turn into a nightmare. This lightweight and smart script tracks down MySQL, locates its path, and opens the folder for you within seconds.
 
