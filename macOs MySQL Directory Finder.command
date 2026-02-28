@@ -31,9 +31,11 @@ fi
 GREEN='\033[0;32m'
 CYAN='\033[0;36m'
 WHITE='\033[1;37m'
+BOLD_WHITE='\033[1;97m' # İsim için parlak beyaz
 GRAY='\033[0;90m'
 ORANGE='\033[0;33m'
-NC='\033[0m'
+LINKEDIN_BLUE='\033[1;34m' # LinkedIn için parlak mavi
+NC='\033[0m' # Renk sıfırlama
 
 # --- BAŞLANGIÇ EKRANI ---
 clear
@@ -93,7 +95,8 @@ fi
 # --- İMZA VE İLETİŞİM ---
 echo ""
 echo -e "${CYAN}==================================================${NC}"
-echo -e "  ${GRAY}$L_DEV ${WHITE}muroShow${NC}"
-echo -e "  ${GRAY}LinkedIn: ${CYAN}https://www.linkedin.com/in/muharremaktas/${NC}"
+echo -e "  ${GRAY}$L_DEV ${BOLD_WHITE}Muharrem AKTAS${NC}"
+echo -e "  ${GRAY}Github:   ${WHITE}https://github.com/muroshow/${NC}"
+echo -e "  ${GRAY}LinkedIn: ${LINKEDIN_BLUE}https://www.linkedin.com/in/muharremaktas/${NC}"
 echo -e "${CYAN}==================================================${NC}"
 read -p "$L_EXIT"
