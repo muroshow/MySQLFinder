@@ -1,12 +1,15 @@
-# 🔍 macOS MySQL Directory Finder
+# 🔍 macOS MySQL Dizin Bulma Sihirbazı 🧙‍♂️
 
 macOS sistemlerde MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü Finder'da sizin için açar.
 
 ## ✨ Özellikler
 
-- **🌍 Otomatik Dil Desteği:** Sistem dilinizi algılar; Türkçe sistemlerde Türkçe, diğer tüm dillerde otomatik olarak İngilizce çalışır.
+- **🌍 Otomatik Dil Desteği:** Sistem dilinizi algılar. Türkçe sistemlerde Türkçe, diğer tüm dillerde otomatik olarak İngilizce çalışır.
+- **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım (History) gösteren, modern ve temiz bir terminal arayüzü sunar.
+- **📋 Otomatik Kopyalama:** Bulunan MySQL yolu anında panoya (clipboard) kopyalanır; manuel seçim yapmanıza gerek kalmaz.
+- **🟠 Turuncu Dizin Vurgusu:** Hedef klasör yolu, maksimum görünürlük için parlak turuncu renkle vurgulanır.
 - **🔍 Adım Adım Tarama:** Önce en yaygın `/usr` dizinlerini kontrol eder (Hızlı), bulunamazsa tüm diski tarar (Derin).
-- **🛡️ Akıllı Filtreleme:** Sadece "bin" ve "local" gibi anlamlı MySQL dizinlerini hedefler, gereksiz dosyaları eler.
+- **🛡️ Akıllı Filtreleme:** Sadece "bin" ve "local" gibi anlamlı MySQL dizinlerini hedefler, gereksiz sonuçları eler.
 - **📂 Tek Tıkla Erişim:** Dizin bulunduğu anda otomatik olarak **Finder** penceresinde açılır.
 - **🎨 Kullanıcı Dostu:** Renkli terminal arayüzü ile süreç hakkında anlık ve estetik bilgi verir.
 
