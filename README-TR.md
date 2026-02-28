@@ -1,24 +1,52 @@
-# 🔍 macOS MySQL Dizin Bulma Sihirbazı 🧙‍♂️
+# 🔍 MySQL Dizin Bulma Sihirbazı 🧙‍♂️
 
-macOS sistemlerde MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü Finder'da sizin için açar.
+Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
 
 ## ✨ Özellikler
 
-- **🌍 Otomatik Dil Desteği:** Sistem dilinizi algılar. Türkçe sistemlerde Türkçe, diğer tüm dillerde otomatik olarak İngilizce çalışır.
-- **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım (History) gösteren, modern ve temiz bir terminal arayüzü sunar.
-- **📋 Otomatik Kopyalama:** Bulunan MySQL yolu anında panoya (clipboard) kopyalanır; manuel seçim yapmanıza gerek kalmaz.
-- **🟠 Turuncu Dizin Vurgusu:** Hedef klasör yolu, maksimum görünürlük için parlak turuncu renkle vurgulanır.
-- **🔍 Adım Adım Tarama:** Önce en yaygın `/usr` dizinlerini kontrol eder (Hızlı), bulunamazsa tüm diski tarar (Derin).
-- **🛡️ Akıllı Filtreleme:** Sadece "bin" ve "local" gibi anlamlı MySQL dizinlerini hedefler, gereksiz sonuçları eler.
-- **📂 Tek Tıkla Erişim:** Dizin bulunduğu anda otomatik olarak **Finder** penceresinde açılır.
-- **🎨 Kullanıcı Dostu:** Renkli terminal arayüzü ile süreç hakkında anlık ve estetik bilgi verir.
+* **🌍 Otomatik Dil Desteği:** Sistem dilinizi algılar. Türkçe sistemlerde Türkçe, diğer tüm dillerde otomatik olarak İngilizce çalışır.
+* **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım (History) gösteren, modern ve temiz bir terminal arayüzü sunar.
+* **📋 Otomatik Kopyalama:** Bulunan MySQL yolu anında panoya (clipboard) kopyalanır; manuel seçim yapmanıza gerek kalmaz.
+* **🟠 Turuncu Dizin Vurgusu:** Hedef klasör yolu, maksimum görünürlük için parlak turuncu renkle vurgulanır.
+* **💻 Çapraz Platform:** Hem **macOS** (.command) hem de **Windows** (.ps1) desteği mevcuttur.
+* **🔍 Adım Adım Tarama:** Önce en yaygın dizinleri kontrol eder (Hızlı), bulunamazsa tüm diski tarar (Derin).
+* **📂 Tek Tıkla Erişim:** Dizin bulunduğu anda otomatik olarak **Finder** veya **Dosya Gezgini** penceresinde açılır.
+* **🎨 Kullanıcı Dostu:** Renkli arayüzü ile süreç hakkında anlık ve estetik bilgi verir.
 
 ---
 
 ## 🚀 Nasıl Kullanılır?
 
-### Yöntem-1: Tek Tıkla Kurulum (En Hızlı)
+### 🍎 macOS İçin (Tek Tıkla Kurulum)
+
 Terminal'i açın ve aşağıdaki komutu yapıştırın. Bu komut scripti **Masaüstünüze** indirecek ve gerekli izinleri otomatik olarak ayarlayacaktır:
 
 ```bash
 curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+
+```
+
+### 🪟 Windows İçin (Tek Tıkla Kurulum)
+
+**PowerShell**'i açın ve aşağıdaki komutu yapıştırın. Bu komut scripti **Masaüstünüze** indirecektir:
+
+```powershell
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
+
+```
+
+> **Not:** İndirdikten sonra masaüstünüzdeki `MySQLFinder.ps1` dosyasına sağ tıklayıp **"PowerShell ile Çalıştır"** demeniz yeterlidir.
+
+---
+
+## 🛠️ Geliştirici & İletişim
+
+Bu araç **Muharrem AKTAS** tarafından geliştirilmiştir.
+
+🔗 **Github:** [https://github.com/muroshow/](https://www.google.com/search?q=https://github.com/muroshow/)
+
+🔗 **LinkedIn:** [https://www.linkedin.com/in/muharremaktas/](https://www.linkedin.com/in/muharremaktas/)
+
+## 📜 Lisans
+
+Bu proje **MIT Lisansı** ile korunmaktadır.
