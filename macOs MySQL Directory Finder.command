@@ -1,88 +1,99 @@
 #!/bin/bash
 
-# Sistem dilini daha sağlam bir yöntemle kontrol et
-# LANG değişkeni genelde 'tr_TR.UTF-8' veya 'en_US.UTF-8' döner.
+# Sistem dili kontrolü (tr ile başlıyorsa Türkçe, değilse İngilizce)
 if [[ "$LANG" == tr* ]]; then
-    # Türkçe Metinler
-    L_TITLE="      macOS MySQL DİZİN BULUCU (DEDEKTİF)"
-    L_SEARCHING="MySQL kurulum dizini aranıyor, lütfen bekleyin..."
-    L_QUICK_FOUND="✔ Hızlı tarama ile bulundu:"
-    L_USR_SEARCHING="Hızlı taramada bulunamadı. /usr dizini taranıyor..."
-    L_USR_FOUND="✔ /usr içinde bulundu:"
-    L_DEEP_WARN="Dikkat: /usr içinde bulunamadı. Tüm disk taranıyor..."
-    L_DEEP_TIME="(Bu işlem birkaç dakika sürebilir)"
-    L_DEEP_FOUND="✔ Derin tarama ile bulundu:"
-    L_NOT_FOUND="❌ Üzgünüm, MySQL hiçbir yerde bulunamadı!"
-    L_OPENING="Klasör açılıyor..."
-    L_DONE="İşlem tamamlandı!"
-    L_EXIT="Çıkmak için Enter'a basın..."
+    L_TITLE="MacOS MySQL DİZİN BULMA SİHİRBAZI"
+    L_STEP1="Hızlı tarama yapılıyor..."
+    L_STEP2="/usr dizini taranıyor..."
+    L_STEP3="Derin tarama başlatılıyor..."
+    L_RESULT="✅ MySQL DİZİNİ BAŞARIYLA BULUNDU"
+    L_PATH="Bulunduğu konum:"
+    L_COPY="📋 Yol panoya kopyalandı ve Finder açılıyor..."
+    L_DONE="✨ İşlem başarıyla tamamlandı."
+    L_NOT_FOUND="❌ MySQL bulunamadı!"
+    L_EXIT="Kapatmak için Enter'a basın..."
+    L_DEV="Geliştirici:"
 else
-    # English Texts (Default)
-    L_TITLE="      macOS MySQL DIRECTORY FINDER (DETECTIVE)"
-    L_SEARCHING="Searching for MySQL installation path, please wait..."
-    L_QUICK_FOUND="✔ Found via quick scan:"
-    L_USR_SEARCHING="Not found in quick scan. Searching /usr directory..."
-    L_USR_FOUND="✔ Found in /usr:"
-    L_DEEP_WARN="Warning: Not found in /usr. Searching entire disk..."
-    L_DEEP_TIME="(This process may take a few minutes)"
-    L_DEEP_FOUND="✔ Found via deep scan:"
-    L_NOT_FOUND="❌ Sorry, MySQL could not be found anywhere!"
-    L_OPENING="Opening folder..."
-    L_DONE="Process completed!"
-    L_EXIT="Press Enter to exit..."
+    L_TITLE="MacOS MySQL DIRECTORY FINDER WIZARD"
+    L_STEP1="Running quick scan..."
+    L_STEP2="Scanning /usr directory..."
+    L_STEP3="Starting deep scan..."
+    L_RESULT="✅ MySQL DIRECTORY FOUND SUCCESSFULLY"
+    L_PATH="Found Location:"
+    L_COPY="📋 Path copied to clipboard and Finder is opening..."
+    L_DONE="✨ Process completed successfully."
+    L_NOT_FOUND="❌ MySQL not found!"
+    L_EXIT="Press Enter to close..."
+    L_DEV="Developer:"
 fi
 
 # Renkler
 GREEN='\033[0;32m'
-RED='\033[0;31m'
 CYAN='\033[0;36m'
+WHITE='\033[1;37m'
+GRAY='\033[0;90m'
+ORANGE='\033[0;33m'
 NC='\033[0m'
 
+# --- BAŞLANGIÇ EKRANI ---
 clear
-echo "=================================================="
-echo "$L_TITLE"
-echo "=================================================="
-echo -e "${CYAN}$L_SEARCHING${NC}"
+echo -e "${CYAN}==================================================${NC}"
+echo -e "${WHITE}      $L_TITLE${NC}"
+echo -e "${CYAN}==================================================${NC}"
+echo ""
 
-# 1. AŞAMA: Hızlı Kontrol
-QUICK_FIND=$(which mysql 2>/dev/null)
+# Fonksiyon: Şık Log Yazma
+log_step() {
+    echo -e " ${GRAY}[•]${NC} $1"
+    sleep 0.5
+}
 
-if [ ! -z "$QUICK_FIND" ]; then
-    MYSQL_BIN_PATH=$(dirname "$QUICK_FIND")
-    echo -e "${GREEN}$L_QUICK_FOUND${NC} $MYSQL_BIN_PATH"
+# 1. Adım: Hızlı Tarama
+log_step "$L_STEP1"
+MYSQL_BIN_PATH=$(which mysql 2>/dev/null)
+
+if [ ! -z "$MYSQL_BIN_PATH" ]; then
+    MYSQL_BIN_PATH=$(dirname "$MYSQL_BIN_PATH")
 else
-    # 2. AŞAMA: /usr dizini taraması
-    echo -e "${CYAN}$L_USR_SEARCHING${NC}"
-    USR_FIND=$(find /usr -name "mysql" -type d 2>/dev/null | head -n 1)
+    # 2. Adım: /usr Taraması
+    log_step "$L_STEP2"
+    MYSQL_BIN_PATH=$(find /usr -name "mysql" -type d 2>/dev/null | head -n 1)
     
-    if [ ! -z "$USR_FIND" ]; then
-        MYSQL_BIN_PATH="$USR_FIND"
-        echo -e "${GREEN}$L_USR_FOUND${NC} $MYSQL_BIN_PATH"
-    else
-        # 3. AŞAMA: Tüm disk taraması
-        echo -e "${RED}$L_DEEP_WARN${NC}"
-        echo -e "${RED}$L_DEEP_TIME${NC}"
-        
-        ROOT_FIND=$(find / -name "mysql" -type d 2>/dev/null | grep -E "bin/mysql|usr/local/mysql" | head -n 1)
-        
-        if [ ! -z "$ROOT_FIND" ]; then
-            MYSQL_BIN_PATH="$ROOT_FIND"
-            echo -e "${GREEN}$L_DEEP_FOUND${NC} $MYSQL_BIN_PATH"
-        else
-            echo -e "${RED}$L_NOT_FOUND${NC}"
-            read -p "$L_EXIT"
-            exit 1
-        fi
+    if [ -z "$MYSQL_BIN_PATH" ]; then
+        # 3. Adım: Derin Tarama
+        log_step "$L_STEP3"
+        MYSQL_BIN_PATH=$(find / -name "mysql" -type d 2>/dev/null | grep -E "bin/mysql|usr/local/mysql" | head -n 1)
     fi
 fi
 
-echo "--------------------------------------------------"
-echo -e "${CYAN}$L_OPENING${NC}"
-sleep 1
+# --- SONUÇ PANELİ ---
+echo ""
+if [ ! -z "$MYSQL_BIN_PATH" ]; then
+    # İşlemler: Panoya Kopyala
+    echo "$MYSQL_BIN_PATH" | pbcopy
+    
+    # Görsel Sonuç Kartı
+    echo -e "  ${GREEN}$L_RESULT${NC}"
+    echo -e "  ${WHITE}--------------------------------------------------${NC}"
+    echo -e "  ${WHITE}$L_PATH${NC}"
+    echo -e "  ${ORANGE}$MYSQL_BIN_PATH${NC}"
+    echo -e "  ${WHITE}--------------------------------------------------${NC}"
+    echo ""
+    echo -e "  ${CYAN}$L_COPY${NC}"
+    
+    # Finder'ı aç
+    open "$MYSQL_BIN_PATH"
+    
+    echo ""
+    echo -e "  ${GREEN}$L_DONE${NC}"
+else
+    echo -e "  ${RED}$L_NOT_FOUND${NC}"
+fi
 
-# Klasörü Finder'da aç
-open "$MYSQL_BIN_PATH"
-
-echo -e "${GREEN}$L_DONE${NC}"
-echo "=================================================="
+# --- İMZA VE İLETİŞİM ---
+echo ""
+echo -e "${CYAN}==================================================${NC}"
+echo -e "  ${GRAY}$L_DEV ${WHITE}muroShow${NC}"
+echo -e "  ${GRAY}LinkedIn: ${CYAN}https://www.linkedin.com/in/muharremaktas/${NC}"
+echo -e "${CYAN}==================================================${NC}"
 read -p "$L_EXIT"
