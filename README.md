@@ -1,3 +1,5 @@
+### Düzeltilmiş Kod:
+
 ````markdown
 # 🔍 MySQL Directory Finder Wizard 🧙‍♂️
 
@@ -77,4 +79,11 @@ powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.github
 
 This project is protected under the **MIT License**.
 
+```
+
+### Önemli Noktalar:
+1. **Anchor Link Formatı**: `#turkce-versiyon` ve `#english-version` doğru başlık metniyle eşleşen anchor linklerdir.
+2. **Başlık ID'leri**: `{#turkce-versiyon}` gibi eklemeler Markdown'da standart değil. Bunun yerine başlıkları küçük harflerle ve boşlukları tire ile yazıyoruz (örneğin: `#turkce-versiyon`).
+
+Bu kodla, kullanıcılar dil seçimi yaparak doğrudan ilgili bölüme gidebilirler. Eğer başka bir konuda yardıma ihtiyacınız varsa, sormaktan çekinmeyin!
 ```
