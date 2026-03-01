@@ -1,52 +1,79 @@
+```markdown
 # 🔍 MySQL Directory Finder Wizard 🧙‍♂️
+
+### 🌐 Select Language / Dil Seçin
+[🇺🇸 English Version](#english-version) | [🇹🇷 Türkçe Versiyon](#türkçe-versiyon)
+
+---
+
+## <a name="english-version"></a>🇺🇸 English Version
 
 Finding the MySQL installation directory (Path) on our computers can sometimes turn into a nightmare. This lightweight and smart script tracks down MySQL, locates its path, and opens the folder for you within seconds.
 
-## ✨ Features
+### ✨ Features
+* **🌍 Auto-Language:** Detects system language automatically (EN/TR).
+* **🧙‍♂️ Wizard Interface:** Modern, clean terminal UI showing process history.
+* **📋 Auto-Copy:** Detected path is instantly copied to your clipboard.
+* **💻 Cross-Platform:** Supports both **macOS** (.command) and **Windows** (.ps1).
+* **📂 One-Click Access:** Opens the location in **Finder** or **File Explorer** immediately.
 
-* **🌍 Automatic Language Support:** Detects your system language. It runs in Turkish for Turkish systems and English for everyone else.
-* **🧙‍♂️ Wizard Interface:** Provides a modern, clean terminal UI that shows process history step-by-step.
-* **📋 Auto-Copy to Clipboard:** The detected MySQL path is instantly copied to your clipboard—no manual selection needed.
-* **🟠 Orange Path Highlight:** The target directory is highlighted in a vibrant orange color for maximum visibility.
-* **💻 Cross-Platform:** Supports both **macOS** (.command) and **Windows** (.ps1) environments.
-* **🔍 Step-by-Step Scanning:** First checks the most common directories (Fast), and if not found, scans the entire disk (Deep).
-* **📂 One-Click Access:** Automatically opens the detected location in **Finder** or **File Explorer** immediately.
-* **🎨 User-Friendly:** Provides real-time process updates with a clean, colored interface.
+### 🚀 How to Use (One-Click Install)
 
----
-
-## 🚀 How to Use
-
-### 🍎 For macOS (One-Click Installation)
-
-Open your Terminal and paste the following command. This will download the script to your **Desktop** and set permissions automatically:
-
+**🍎 macOS:**
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
 
 ```
 
-### 🪟 For Windows (One-Click Installation)
-
-Open **PowerShell** and paste the following command. This will download the script to your **Desktop**:
+**🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
 
 ```
 
-> **Note:** After downloading, right-click the `MySQLFinder.ps1` file on your desktop and select **"Run with PowerShell"**.
+> **Note:** On Windows, right-click the file and select **"Run with PowerShell"**.
 
 ---
 
-## 🛠️ Developer & Contact
+## 🇹🇷 Türkçe Versiyon
 
-Developed by **Muharrem AKTAS**. Feel free to connect!
+Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
 
-🔗 **Github:** [https://github.com/muroshow/](https://www.google.com/search?q=https://github.com/muroshow/)
+### ✨ Özellikler
 
-🔗 **LinkedIn:** [https://www.linkedin.com/in/muharremaktas/](https://www.linkedin.com/in/muharremaktas/)
+* **🌍 Otomatik Dil:** Sistem dilinizi algılar (TR/EN).
+* **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım gösteren modern terminal UI.
+* **📋 Otomatik Kopyalama:** Bulunan yol anında panoya (clipboard) kopyalanır.
+* **💻 Çapraz Platform:** macOS (.command) ve Windows (.ps1) desteği.
+* **📂 Tek Tıkla Erişim:** Bulunduğu anda **Finder** veya **Dosya Gezgini** penceresinde açılır.
 
-## 📜 License
+### 🚀 Nasıl Kullanılır? (Tek Tıkla Kurulum)
 
-This project is protected under the **MIT License**.
+**🍎 macOS:**
+
+```bash
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+
+```
+
+**🪟 Windows (PowerShell):**
+
+```powershell
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+
+```
+
+> **Note:** Windows'ta dosyaya sağ tıklayıp **"PowerShell ile Çalıştır"** demeniz yeterlidir.
+
+---
+
+## 🛠️ Geliştirici & İletişim
+
+**Muharrem AKTAS** 🔗 **Github:** [muroshow](https://github.com/muroshow/)
+
+🔗 **LinkedIn:** [muharremaktas](https://www.linkedin.com/in/muharremaktas/)
+
+## 📜 Lisans
+
+Bu proje **MIT Lisansı** ile korunmaktadır.
