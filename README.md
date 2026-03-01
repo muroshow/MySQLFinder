@@ -1,4 +1,3 @@
-```markdown
 # 🔍 MySQL Directory Finder Wizard 🧙‍♂️
 
 ### 🌐 Dil Seçin / Select Language
@@ -6,7 +5,7 @@
 
 ---
 
-## <a name="turkish-version"></a>🇹🇷 Türkçe Versiyon
+## 🇹🇷 Türkçe Versiyon
 
 Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
 
@@ -77,7 +76,3 @@ powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githu
 ## 📜 License
 
 This project is protected under the **MIT License**.
-
-```
-
-```
