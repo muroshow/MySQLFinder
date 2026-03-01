@@ -2,11 +2,11 @@
 
 ### 🌐 Select Language / Dil Seçin
 
-**[🇺🇸 English Version](https://www.google.com/search?q=%23english-version)** | **[🇹🇷 Türkçe Versiyon](https://www.google.com/search?q=%23t%C3%BCrk%C3%A7e-versiyon)**
+**[🇹🇷 Türkçe Versiyon](#turkish-version)** || **[🇺🇸 English Version](#english-version)** 
 
 ---
 
-## 🇺🇸 English Version
+## 🇺🇸 English Version {#english-version}
 
 Finding the MySQL installation directory (Path) on our computers can sometimes turn into a nightmare. This lightweight and smart script tracks down MySQL, locates its path, and opens the folder for you within seconds.
 
@@ -38,7 +38,7 @@ powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.github
 
 ---
 
-## 🇹🇷 Türkçe Versiyon
+## 🇹🇷 Türkçe Versiyon {#turkish-version}
 
 Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
 
