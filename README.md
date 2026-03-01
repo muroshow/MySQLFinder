@@ -1,16 +1,17 @@
-```markdown
 # 🔍 MySQL Directory Finder Wizard 🧙‍♂️
 
 ### 🌐 Select Language / Dil Seçin
-[🇺🇸 English Version](#english-version) | [🇹🇷 Türkçe Versiyon](#türkçe-versiyon)
+
+**[🇺🇸 English Version](https://www.google.com/search?q=%23english-version)** | **[🇹🇷 Türkçe Versiyon](https://www.google.com/search?q=%23t%C3%BCrk%C3%A7e-versiyon)**
 
 ---
 
-## <a name="english-version"></a>🇺🇸 English Version
+## 🇺🇸 English Version
 
 Finding the MySQL installation directory (Path) on our computers can sometimes turn into a nightmare. This lightweight and smart script tracks down MySQL, locates its path, and opens the folder for you within seconds.
 
 ### ✨ Features
+
 * **🌍 Auto-Language:** Detects system language automatically (EN/TR).
 * **🧙‍♂️ Wizard Interface:** Modern, clean terminal UI showing process history.
 * **📋 Auto-Copy:** Detected path is instantly copied to your clipboard.
@@ -20,15 +21,16 @@ Finding the MySQL installation directory (Path) on our computers can sometimes t
 ### 🚀 How to Use (One-Click Install)
 
 **🍎 macOS:**
+
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
 
 ```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
 
 ```
 
@@ -53,27 +55,27 @@ Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabus
 **🍎 macOS:**
 
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
 
 ```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
 
 ```
 
-> **Note:** Windows'ta dosyaya sağ tıklayıp **"PowerShell ile Çalıştır"** demeniz yeterlidir.
+> **Not:** Windows'ta dosyaya sağ tıklayıp **"PowerShell ile Çalıştır"** demeniz yeterlidir.
 
 ---
 
-## 🛠️ Geliştirici & İletişim
+## 🛠️ Developer & Contact
 
 **Muharrem AKTAS** 🔗 **Github:** [muroshow](https://github.com/muroshow/)
 
 🔗 **LinkedIn:** [muharremaktas](https://www.linkedin.com/in/muharremaktas/)
 
-## 📜 Lisans
+## 📜 License
 
-Bu proje **MIT Lisansı** ile korunmaktadır.
+This project is protected under the **MIT License**.
