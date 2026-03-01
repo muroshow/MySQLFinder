@@ -5,6 +5,7 @@
 Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
 
 ### ✨ Özellikler
+
 * **🌍 Otomatik Dil:** Sistem dilinizi algılar (TR/EN).
 * **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım gösteren modern terminal UI.
 * **📋 Otomatik Kopyalama:** Bulunan yol anında panoya (clipboard) kopyalanır.
@@ -14,15 +15,16 @@ Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabus
 ### 🚀 Nasıl Kullanılır? (Tek Tıkla Kurulum)
 
 **🍎 macOS:**
+
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
 
 ```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
 
 ```
 
@@ -47,14 +49,14 @@ Finding the MySQL installation directory (Path) on our computers can sometimes t
 **🍎 macOS:**
 
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
 
 ```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
 
 ```
 
