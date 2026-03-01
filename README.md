@@ -1,10 +1,5 @@
 # 🔍 MySQL Directory Finder Wizard 🧙‍♂️
 
-### 🌐 Dil Seçin / Select Language
-[🇹🇷 Türkçe Versiyon](#turkish-version) | [🇺🇸 English Version](#english-version)
-
----
-
 ## 🇹🇷 Türkçe Versiyon
 
 Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
