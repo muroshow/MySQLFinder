@@ -1,4 +1,4 @@
-# 🔍 MySQL Directory Finder Wizard 🧙‍♂️
+# 🔍 MySQL Directory Finder Wizard (Cross-Platform)🧙‍♂️
 
 ## 🇹🇷 Türkçe Versiyon
 
