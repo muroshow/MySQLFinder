@@ -6,11 +6,14 @@ Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabus
 
 ### ✨ Özellikler
 
-* **🌍 Otomatik Dil:** Sistem dilinizi algılar (TR/EN).
-* **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım gösteren modern terminal UI.
-* **📋 Otomatik Kopyalama:** Bulunan yol anında panoya (clipboard) kopyalanır.
-* **💻 Çapraz Platform:** macOS (.command) ve Windows (.ps1) desteği.
-* **📂 Tek Tıkla Erişim:** Bulunduğu anda **Finder** veya **Dosya Gezgini** penceresinde açılır.
+* **🌍 Otomatik Dil Desteği:** Sistem dilinizi algılar. Türkçe sistemlerde Türkçe, diğer tüm dillerde otomatik olarak İngilizce çalışır.
+* **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım (History) gösteren, modern ve temiz bir terminal arayüzü sunar.
+* **📋 Otomatik Kopyalama:** Bulunan MySQL yolu anında panoya (clipboard) kopyalanır; manuel seçim yapmanıza gerek kalmaz.
+* **🟠 Turuncu Dizin Vurgusu:** Hedef klasör yolu, maksimum görünürlük için parlak turuncu renkle vurgulanır.
+* **💻 Çapraz Platform:** Hem **macOS** (.command) hem de **Windows** (.ps1) desteği mevcuttur.
+* **🔍 Adım Adım Tarama:** Önce en yaygın dizinleri kontrol eder (Hızlı), bulunamazsa tüm diski tarar (Derin).
+* **📂 Tek Tıkla Erişim:** Dizin bulunduğu anda otomatik olarak **Finder** veya **Dosya Gezgini** penceresinde açılır.
+* **🎨 Kullanıcı Dostu:** Renkli arayüzü ile süreç hakkında anlık ve estetik bilgi verir.
 
 ### 🚀 Nasıl Kullanılır? (Tek Tıkla Kurulum)
 
@@ -38,11 +41,14 @@ Finding the MySQL installation directory (Path) on our computers can sometimes t
 
 ### ✨ Features
 
-* **🌍 Auto-Language:** Detects system language automatically (EN/TR).
-* **🧙‍♂️ Wizard Interface:** Modern, clean terminal UI showing process history.
-* **📋 Auto-Copy:** Detected path is instantly copied to your clipboard.
-* **💻 Cross-Platform:** Supports both **macOS** (.command) and **Windows** (.ps1).
-* **📂 One-Click Access:** Opens the location in **Finder** or **File Explorer** immediately.
+* **🌍 Automatic Language Support: Detects your system language. It runs in Turkish for Turkish systems and defaults to English for all other languages.
+* **🧙‍♂️ Wizard Interface: Provides a modern and clean terminal UI that shows the process history step-by-step.
+* **📋 Auto-Copy to Clipboard: The detected MySQL path is instantly copied to your clipboard; no manual selection needed.
+* **🟠 Orange Path Highlight: The target directory path is highlighted in vibrant orange for maximum visibility.
+* **💻 Cross-Platform: Support is available for both macOS (.command) and Windows (.ps1).
+* **🔍 Step-by-Step Scanning: First checks the most common directories (Fast), and if not found, scans the entire disk (Deep).
+* **📂 One-Click Access: Once the directory is located, it automatically opens in Finder or File Explorer window.
+* **🎨 User-Friendly: Provides real-time and aesthetic information about the process with its colorful interface.
 
 ### 🚀 How to Use (One-Click Install)
 
