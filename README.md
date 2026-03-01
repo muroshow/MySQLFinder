@@ -1,20 +1,16 @@
-### Düzeltilmiş Kod:
-
-````markdown
+```markdown
 # 🔍 MySQL Directory Finder Wizard 🧙‍♂️
 
-### 🌐 Select Language / Dil Seçin
-
-**[🇹🇷 Türkçe Versiyon](#turkce-versiyon)** || **[🇺🇸 English Version](#english-version)**
+### 🌐 Dil Seçin / Select Language
+[🇹🇷 Türkçe Versiyon](#turkish-version) | [🇺🇸 English Version](#english-version)
 
 ---
 
-## 🇹🇷 Türkçe Versiyon {#turkce-versiyon}
+## <a name="turkish-version"></a>🇹🇷 Türkçe Versiyon
 
 Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabusa dönüşebilir. Bu hafif ve akıllı script, MySQL'in izini sürer, yolunu bulur ve saniyeler içinde ilgili klasörü sizin için açar.
 
 ### ✨ Özellikler
-
 * **🌍 Otomatik Dil:** Sistem dilinizi algılar (TR/EN).
 * **🧙‍♂️ Sihirbaz Arayüzü:** İşlemleri adım adım gösteren modern terminal UI.
 * **📋 Otomatik Kopyalama:** Bulunan yol anında panoya (clipboard) kopyalanır.
@@ -24,22 +20,23 @@ Bilgisayarlarımızdaki MySQL kurulum dizinini (Path) bulmak bazen tam bir kabus
 ### 🚀 Nasıl Kullanılır? (Tek Tıkla Kurulum)
 
 **🍎 macOS:**
-
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
-````
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+
+```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+
 ```
 
 > **Not:** Windows'ta dosyaya sağ tıklayıp **"PowerShell ile Çalıştır"** demeniz yeterlidir.
 
 ---
 
-## 🇺🇸 English Version {#english-version}
+## 🇺🇸 English Version
 
 Finding the MySQL installation directory (Path) on our computers can sometimes turn into a nightmare. This lightweight and smart script tracks down MySQL, locates its path, and opens the folder for you within seconds.
 
@@ -56,13 +53,15 @@ Finding the MySQL installation directory (Path) on our computers can sometimes t
 **🍎 macOS:**
 
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command)" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+
 ```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 '[https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1](https://raw.githubusercontent.com/muroshow/MySQLFinder/main/MySQLFinder.ps1)'"
+
 ```
 
 > **Note:** On Windows, right-click the file and select **"Run with PowerShell"**.
@@ -81,9 +80,4 @@ This project is protected under the **MIT License**.
 
 ```
 
-### Önemli Noktalar:
-1. **Anchor Link Formatı**: `#turkce-versiyon` ve `#english-version` doğru başlık metniyle eşleşen anchor linklerdir.
-2. **Başlık ID'leri**: `{#turkce-versiyon}` gibi eklemeler Markdown'da standart değil. Bunun yerine başlıkları küçük harflerle ve boşlukları tire ile yazıyoruz (örneğin: `#turkce-versiyon`).
-
-Bu kodla, kullanıcılar dil seçimi yaparak doğrudan ilgili bölüme gidebilirler. Eğer başka bir konuda yardıma ihtiyacınız varsa, sormaktan çekinmeyin!
 ```
