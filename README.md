@@ -27,7 +27,7 @@ curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubu
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLDirectoryFinder/main/MySQLFinder.ps1'"
+powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLDirectoryFinder/main/Windows MySQL Directory Finder.ps1'"
 
 ```
 
