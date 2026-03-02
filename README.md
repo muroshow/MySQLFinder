@@ -27,12 +27,9 @@ curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubu
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\MySQLFinder.ps1 'https://raw.githubusercontent.com/muroshow/MySQLDirectoryFinder/main/Windows MySQL Directory Finder.ps1'"
+powershell -Command "iwr -OutFile '$env:USERPROFILE\Desktop\Windows MySQL Directory Finder.bat' 'https://raw.githubusercontent.com/muroshow/MySQLDirectoryFinder/main/Windows%20MySQL%20Directory%20Finder.bat'"
 
 ```
-
-> **Not:** Windows'ta dosyaya sağ tıklayıp **"PowerShell ile Çalıştır"** demeniz yeterlidir.
-
 ---
 
 ## 🇺🇸 English Version
@@ -55,18 +52,16 @@ Finding the MySQL installation directory (Path) on our computers can sometimes t
 **🍎 macOS:**
 
 ```bash
-curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
+curl -L -o ~/Desktop/"macOs MySQL Directory Finder.command" "https://raw.githubusercontent.com/muroshow/MySQLDirectoryFinder/main/macOs%20MySQL%20Directory%20Finder.command" && chmod +x ~/Desktop/"macOs MySQL Directory Finder.command"
 
 ```
 
 **🪟 Windows (PowerShell):**
 
 ```powershell
-powershell -Command "iwr -outf $HOME\Desktop\Windows MySQL Directory Finder.bat 'https://raw.githubusercontent.com/muroshow/MySQLFinder/main/Windows%20MySQL%20Directory%20Finder.bat'"
+powershell -Command "iwr -OutFile '$env:USERPROFILE\Desktop\Windows MySQL Directory Finder.bat' 'https://raw.githubusercontent.com/muroshow/MySQLDirectoryFinder/main/Windows%20MySQL%20Directory%20Finder.bat'"
 
 ```
-
-> **Note:** On Windows, right-click the file and select **"Run with PowerShell"**.
 
 ---
 
